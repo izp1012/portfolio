@@ -9672,3 +9672,73 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* About image scaling: ensure the left 'about' image fits viewport while preserving aspect ratio */
+#about-section .img-about .img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 420px;
+}
+@media (max-width: 768px) {
+  #about-section .about-title {
+    font-size: 40px;
+  }
+  #about-section .about-grid {
+    grid-template-columns: 1fr;
+  }
+  #about-section .about-grid .label {
+    font-size: 22px;
+  }
+  #about-section .about-grid .value {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  #about-section .img-about .img {
+    height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  #about-section .img-about .img {
+    height: 240px;
+  }
+}
+/* About section new layout styles */
+#about-section .about-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+#about-section .subtitle {
+  color: #9a9a9a;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+#about-section .about-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 40px;
+  row-gap: 12px;
+  align-items: center;
+}
+#about-section .about-grid .label {
+  font-weight: 700;
+  font-size: 28px;
+}
+#about-section .about-grid .value {
+  font-size: 28px;
+  color: #6b7280;
+}
+#about-section .download-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 28px;
+  background-color: #3b5bfd;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0,0,0,.15);
+  text-decoration: none;
+}
